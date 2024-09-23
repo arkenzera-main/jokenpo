@@ -14,13 +14,13 @@ function jogar() {
         let sorteio = Math.floor(Math.random() * 3) // ou 0 ou 1 ou 2
         switch (sorteio) {
             case 0:
-                document.getElementById('pc').src = "/img/pcpedra.png"
+                document.getElementById('pc').src = "img/pcpedra.png"
                 break
             case 1:
-                document.getElementById('pc').src = "/img/pcpapel.png"
+                document.getElementById('pc').src = "img/pcpapel.png"
                 break
             case 2:
-                document.getElementById('pc').src = "/img/pctesoura.png"
+                document.getElementById('pc').src = "img/pctesoura.png"
                 break
         }
         if (sorteio === 0 && document.getElementById('papel').checked === true) {
@@ -45,7 +45,7 @@ function jogar() {
 
 function limpar() {
     document.getElementById('placar').innerHTML = ""
-    document.getElementById('pc').src = "/img/pc.png"
+    document.getElementById('pc').src = "img/pc.png"
 
 }
 
